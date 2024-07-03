@@ -6,7 +6,7 @@ services:
   bot:
     build: .
     command: sh -c "cd /usr/src/app && python -m app"
-    container_name: "token-access-control-bot"
+    container_name: "aeverifybot"
     restart: unless-stopped
     depends_on:
       - redis
